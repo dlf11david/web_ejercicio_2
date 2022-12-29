@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora avanzada</title>
+</head>
+<style>
+    #calculadora{
+        width: 25%;
+        padding: 2px;
+        margin: 2px;
+    }
+    button{
+        width: 20%;
+        padding: 2px;
+        margin: 2px;
+    }
+    input{
+        width: 85%;
+        padding: 2px;
+        margin: 2px;
+    }
+</style>
+<body>
+
+
+<div id="calculadora">
+
+    <div>
+        <input id="resultado" value="0"><br>
+    </div>
+
+    <div>
+        <button onclick="setValue(this.innerHTML)">7</button>
+        <button onclick="setValue(this.innerHTML)">8</button>
+        <button onclick="setValue(this.innerHTML)">9</button>
+        <button onclick="setOperacion(this.innerHTML)" class="operator">/</button>
+    </div>
+
+    <div>
+        <button onclick="setValue(this.innerHTML)">4</button>
+        <button onclick="setValue(this.innerHTML)">5</button>
+        <button onclick="setValue(this.innerHTML)">6</button>
+        <button onclick="setOperacion(this.innerHTML)" class="operator">-</button>
+    </div>
+
+    <div>
+        <button onclick="setValue(this.innerHTML)">1</button>
+        <button onclick="setValue(this.innerHTML)">2</button>
+        <button onclick="setValue(this.innerHTML)">3</button>
+        <button onclick="setOperacion(this.innerHTML)" class="operator">+</button>
+    </div>
+
+    <div>
+        <button onclick="setValue(this.innerHTML)">0</button>
+        <button onclick="setDecimal(this.innerHTML)">.</button>
+        <button onclick="calcular()" class="eval">=</button>
+        <button onclick="setOperacion(this.innerHTML)" class="operator">x</button>
+    </div>
+
+    <div>
+    </div>
+
+    <div>
+        <button onclick="limpiar()" class="limpiar">C</button>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="ejercicio2.js"></script>
+
+</body>
+</html>

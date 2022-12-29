@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Formulario</title>
+</head>
+<style>
+    .caja {
+        background-color: #ccc; 
+        border: solid 2px silver; 
+        border-radius: 5px;
+        width: 400px;
+        padding: 30px;
+        margin: 0 auto;
+    }
+</style>
+<body style="background-color: gray;">
+    <div class="caja">
+        <form>
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" minlength="3"><br>
+            <input type="submit" value="Entrar">
+          </form>
+    </div> 
+</body>
+<script>
+    var user = document.getElementById("username")
+    var pass = document.getElementById("password")
+</script>
+</html>
+
+<!--
+    <style>
+  .hidden {
+    display: none;
+  }
+</style>
+
+<div id="element">Some content</div>
+
+<script>
+  var element = document.getElementById('element');
+  element.style.display = 'block';
+</script>
+
+-->
